@@ -10,41 +10,56 @@ felines = []
 
 
 def create_feline():
+    print("-------------CREATE FELINE----------------")
     print("1) Lion")
     print("2) Tiger")
     print("3) Panther")
     print("4) Cheetah")
     print("5) Cougar")
     print("R) Return to main menu")
-    opt = input("Please select an option: ")
-
-    if opt.isdigit():
-        opt = int(opt)
-        if opt == 1:
+    opt2 = input("Please select a type: ")
+    if opt2.isdigit():
+        opt2 = int(opt2)
+        if opt2 == 1:
             print("You choose Lion")
-            Lion.create()
-        elif opt == 2:
+            felines.append(Lion())
+        elif opt2 == 2:
             print("You choose Tiger")
-            Tiger.create()
-        elif opt == 3:
+            felines.append(Tiger())
+        elif opt2 == 3:
             print("You choose Panther")
-            Panther.create()
-        elif opt == 4:
+            felines.append(Panther())
+        elif opt2 == 4:
             print("You choose Cheetah")
-            Cheetah.create()
-        elif opt == 5:
+            felines.append(Cheetah())
+        elif opt2 == 5:
             print("You choose Cougar")
-            Cougar.create()
-
-    elif opt == "R":
+            felines.append(Cougar())
+    elif opt2 == "R":
         pass
-
     else:
         print("Invalid option")
+        return
+
+
+def show_felines():
+    for feline in felines:
+        feline.show()
+
+
+def show_specific_feline():
+    name = input("Please enter the name of the feline: ")
+    for feline in felines:
+        if feline.name == name:
+            feline.show()
+            break
+    else:
+        print("No feline found")
 
 
 def menu():
     while True:
+        print("-------------MAIN MENU----------------")
         print("1) Create a new feline")
         print("2) Show all felines")
         print("3) Show a specific feline")
@@ -58,7 +73,7 @@ def menu():
             elif opt == 2:
                 show_felines()
             elif opt == 3:
-                show_feline()
+                show_specific_feline()
 
         elif opt == "E":
             break

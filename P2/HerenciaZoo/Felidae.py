@@ -1,18 +1,57 @@
-class Felidae:
-    def __init__(self, name, habitat, father, mother, food, weight, height, zone, speed):
-        self.name = name
-        self.habitat = habitat
-        self.__father = father  # private
-        self.__mother = mother  # private
-        self.food = food  # M
-        self.__weight = weight  # private
-        self.__height = height  # private
-        self.zone = zone  # M
-        self.__speed = speed  # private
+import random
 
-        self.__sleep = False  # private # M
-        self.__check = False  # private # M
-        self.__sterilize = False  # private # M
+
+def generar_id():
+    chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+    id_generado = ""
+    n = 0
+    while n < 3:
+        id_generado += random.choice(chars)
+        n += 1
+    return id_generado
+
+
+class Felidae:
+    name = ""
+    habitat = ""
+    __father = ""  # private
+    __mother = ""  # private
+    food = 0  # M
+    weight = 0  # M
+    height = 0  # M
+    zone = ""  # M
+    __speed = 0  # private
+
+    __sleep = False  # private # M
+    __check = False  # private # M
+    __sterilize = False  # private # M
+
+    @property
+    def father(self):
+        return self.__father
+
+    @father.setter
+    def father(self, father):
+        self.__father = father
+
+    @property
+    def mother(self):
+        return self.__mother
+
+    @mother.setter
+    def mother(self, mother):
+        self.__mother = mother
+
+    @property
+    def speed(self):
+        return self.__speed
+
+    @speed.setter
+    def speed(self, speed):
+        if speed < 0:
+            self.__speed = 0
+        else:
+            self.__speed = speed
 
     @property
     def sleep(self):
@@ -38,22 +77,28 @@ class Felidae:
     def sterilize(self, sterilize):
         self.__sterilize = sterilize
 
-    def create(self):
+    def __init__(self):
+        self.id = generar_id()
+        i = input("Complete data? (y/n): ")
+        if i == "y":
+            self.complete_data()
+
+    def complete_data(self):
         self.name = input("Name: ")
         self.habitat = input("Habitat: ")
-        self.__father = input("Father: ")
-        self.__mother = input("Mother: ")
-        self.food = input("Food: ")
-        self.__weight = input("Weight: ")
-        self.__height = input("Height: ")
+        self.father = input("Father: ")
+        self.mother = input("Mother: ")
+        self.food = float(input("Food: "))
+        self.weight = float(input("Weight: "))
+        self.height = float(input("Height: "))
         self.zone = input("Zone: ")
-        self.__speed = input("Speed: ")
+        self.speed = float(input("Speed: "))
 
     def show(self):
         print("Name: {}\t".format(self.name), "Habitat: {}\t".format(self.habitat),
               "Father: {}\t".format(self.__father),
               "Mother: {}\t".format(self.__mother), "Food: {}\t".format(self.food),
-              "Weight: {}\t".format(self.__weight), "Height: {}\t".format(self.__height),
+              "Weight: {}\t".format(self.weight), "Height: {}\t".format(self.height),
               "Zone: {}\t".format(self.zone), "Speed: {}\t".format(self.__speed), "Sleep: {}\t".format(self.__sleep),
               "Check: {}\t".format(self.__check), "Sterilize: {}\t".format(self.__sterilize))
 
@@ -84,25 +129,25 @@ class Felidae:
 
 
 class Lion(Felidae):
-    def __init__(self, name, habitat, father, mother, food, weight, height, zone, speed):
-        super().__init__(name, habitat, father, mother, food, weight, height, zone, speed)
+    def __init__(self):
+        super().__init__()
 
 
 class Tiger(Felidae):
-    def __init__(self, name, habitat, father, mother, food, weight, height, zone, speed):
-        super().__init__(name, habitat, father, mother, food, weight, height, zone, speed)
+    def __init__(self):
+        super().__init__()
 
 
 class Panther(Felidae):
-    def __init__(self, name, habitat, father, mother, food, weight, height, zone, speed):
-        super().__init__(name, habitat, father, mother, food, weight, height, zone, speed)
+    def __init__(self):
+        super().__init__()
 
 
 class Cheetah(Felidae):
-    def __init__(self, name, habitat, father, mother, food, weight, height, zone, speed):
-        super().__init__(name, habitat, father, mother, food, weight, height, zone, speed)
+    def __init__(self):
+        super().__init__()
 
 
 class Cougar(Felidae):
-    def __init__(self, name, habitat, father, mother, food, weight, height, zone, speed):
-        super().__init__(name, habitat, father, mother, food, weight, height, zone, speed)
+    def __init__(self):
+        super().__init__()
