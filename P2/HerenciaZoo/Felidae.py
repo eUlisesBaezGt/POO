@@ -38,6 +38,17 @@ class Felidae:
     def sterilize(self, sterilize):
         self.__sterilize = sterilize
 
+    def create(self):
+        self.name = input("Name: ")
+        self.habitat = input("Habitat: ")
+        self.__father = input("Father: ")
+        self.__mother = input("Mother: ")
+        self.food = input("Food: ")
+        self.__weight = input("Weight: ")
+        self.__height = input("Height: ")
+        self.zone = input("Zone: ")
+        self.__speed = input("Speed: ")
+
     def show(self):
         print("Name: {}\t".format(self.name), "Habitat: {}\t".format(self.habitat),
               "Father: {}\t".format(self.__father),
