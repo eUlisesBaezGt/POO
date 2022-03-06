@@ -43,8 +43,11 @@ def create_feline():
 
 
 def show_felines():
-    for feline in felines:
-        feline.show()
+    if len(felines) == 0:
+        print("No felines to show")
+    else:
+        for feline in felines:
+            feline.show()
 
 
 def show_specific_feline():
@@ -57,12 +60,23 @@ def show_specific_feline():
         print("No feline found")
 
 
+def update_feline():
+    name = input("Please enter the name of the feline: ")
+    for feline in felines:
+        if feline.name == name:
+            feline.update()
+            break
+    else:
+        print("No feline found")
+
+
 def menu():
     while True:
         print("-------------MAIN MENU----------------")
         print("1) Create a new feline")
         print("2) Show all felines")
         print("3) Show a specific feline")
+        print("4) Update a specific feline")
         print("E) Exit")
         opt = input("Please select an option: ")
 
@@ -74,6 +88,8 @@ def menu():
                 show_felines()
             elif opt == 3:
                 show_specific_feline()
+            elif opt == 4:
+                update_feline()
 
         elif opt == "E":
             break
@@ -83,4 +99,5 @@ def menu():
             continue
 
 
-menu()
+if __name__ == "__main__":
+    menu()

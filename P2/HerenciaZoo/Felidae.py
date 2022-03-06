@@ -79,6 +79,7 @@ class Felidae:
 
     def __init__(self):
         self.id = generar_id()
+        self.special_characteristic = ""
         i = input("Complete data? (y/n): ")
         if i == "y":
             self.complete_data()
@@ -100,7 +101,8 @@ class Felidae:
               "Mother: {}\t".format(self.__mother), "Food: {}\t".format(self.food),
               "Weight: {}\t".format(self.weight), "Height: {}\t".format(self.height),
               "Zone: {}\t".format(self.zone), "Speed: {}\t".format(self.__speed), "Sleep: {}\t".format(self.__sleep),
-              "Check: {}\t".format(self.__check), "Sterilize: {}\t".format(self.__sterilize))
+              "Check: {}\t".format(self.__check), "Sterilize: {}\t".format(self.__sterilize),
+              "Special characteristic: {}\t".format(self.special_characteristic))
 
     def m_feed(self):
         food = float(input("How much food?: "))
@@ -127,27 +129,53 @@ class Felidae:
         self.__sterilize = True
         print("{} is being sterilized".format(self.name))
 
+    def update(self):
+        print("1) Food")
+        print("2) Sleep")
+        print("3) Transfer")
+        print("4) Check")
+        print("5) Sterilize")
+        opt = input("Select status to update: ")
+
+        if opt.isdigit():
+            opt = int(opt)
+            if opt == 1:
+                self.m_feed()
+            elif opt == 2:
+                self.m_sleep()
+            elif opt == 3:
+                self.m_transfer()
+            elif opt == 4:
+                self.m_check()
+            elif opt == 5:
+                self.m_sterilize()
+            else:
+                print("Invalid option")
+        else:
+            print("Invalid option")
+
 
 class Lion(Felidae):
     def __init__(self):
         super().__init__()
+        self.special_characteristic = "mane"
 
+    class Tiger(Felidae):
+        def __init__(self):
+            super().__init__()
+            self.special_characteristic = "stripes"
 
-class Tiger(Felidae):
-    def __init__(self):
-        super().__init__()
+    class Panther(Felidae):
+        def __init__(self):
+            super().__init__()
+            self.special_characteristic = "black fur"
 
+    class Cheetah(Felidae):
+        def __init__(self):
+            super().__init__()
+            self.special_characteristic = "speed"
 
-class Panther(Felidae):
-    def __init__(self):
-        super().__init__()
-
-
-class Cheetah(Felidae):
-    def __init__(self):
-        super().__init__()
-
-
-class Cougar(Felidae):
-    def __init__(self):
-        super().__init__()
+    class Cougar(Felidae):
+        def __init__(self):
+            super().__init__()
+            self.special_characteristic = "tawny fur"
