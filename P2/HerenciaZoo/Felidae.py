@@ -160,22 +160,26 @@ class Lion(Felidae):
         super().__init__()
         self.special_characteristic = "mane"
 
-    class Tiger(Felidae):
-        def __init__(self):
-            super().__init__()
-            self.special_characteristic = "stripes"
 
-    class Panther(Felidae):
-        def __init__(self):
-            super().__init__()
-            self.special_characteristic = "black fur"
+class Tiger(Felidae):
+    def __init__(self):
+        super().__init__()
+        self.special_characteristic = "stripes"
 
-    class Cheetah(Felidae):
-        def __init__(self):
-            super().__init__()
-            self.special_characteristic = "speed"
 
-    class Cougar(Felidae):
-        def __init__(self):
-            super().__init__()
-            self.special_characteristic = "tawny fur"
+class Panther(Felidae):
+    def __init__(self):
+        super().__init__()
+        self.special_characteristic = "black fur"
+
+
+class Cheetah(Felidae):
+    def __init__(self):
+        super().__init__()
+        self.special_characteristic = "speed"
+
+
+class Cougar(Felidae):
+    def __init__(self):
+        super().__init__()
+        self.special_characteristic = "tawny fur"
