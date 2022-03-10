@@ -1,10 +1,17 @@
 import threading as th
+import time
+
+
+def clear_console():
+    import os
+    clear = lambda: os.system('clear')
+    clear()
 
 
 def main():
     hilo = None
     print("""
-        🖩 Calculator 🖩
+        🖩 KIKIN CALCULATOR 🖩
         -------------------------------------------------
     """)
 
@@ -25,18 +32,26 @@ def main():
         if opt == 1:
             hilo = th.Timer(3, addition, args=(x, y))
             hilo.start()
+            clear_console()
+            time.sleep(5)
 
         elif opt == 2:
             hilo = th.Timer(3, subtraction, args=(x, y))
             hilo.start()
+            clear_console()
+            time.sleep(5)
 
         elif opt == 3:
             hilo = th.Timer(3, multiplication, args=(x, y))
             hilo.start()
+            clear_console()
+            time.sleep(5)
 
         elif opt == 4:
             hilo = th.Timer(3, division, args=(x, y))
             hilo.start()
+            clear_console()
+            time.sleep(5)
 
         elif opt == 5:
             print("\nExiting...")
@@ -44,6 +59,7 @@ def main():
             break
         else:
             print("\nInvalid option. Try again.")
+            clear_console()
             continue
 
 
