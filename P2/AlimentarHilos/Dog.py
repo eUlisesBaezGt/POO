@@ -7,3 +7,6 @@ class Dog:
 
     def mk_hung(self):
         self.hunger += 2
+
+    def mk_feed(self):
+        self.hunger -= 5

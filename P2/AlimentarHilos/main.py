@@ -3,44 +3,55 @@ from Dog import Dog
 
 now = 0
 limit = 30
-alive = True
+thread = None
 dog = Dog()
 
 
-def first():
-    global now, limit, alive
+def hungry():
+    global now, limit, thread
+
     dog.mk_hung()
     now = dog.hunger
 
-    thread = th.Timer(5, first)
-    thread.start()
+    if dog.alive:
+        thread = th.Timer(5, hungry)
+        thread.start()
 
-    if now > limit:
-        alive = False
-        print("Dog is dead")
+    elif not dog.alive:
+        print("Dog's hunger exceeded the limit, Dog is now dead")
         thread.cancel()
 
 
-first()
+hungry()
 op = ""
 
-while dog.hunger < limit:
+while now < limit:
 
-    if alive:
+    if dog.hunger >= 10:
 
-        if dog.hunger >= 10:
-            op = input("Dog is hungry {}: ... Do you want to feed it? (Y/N): ".format(dog.hunger))
+        op = input("Dog is hungry {}: ... Do you want to feed it? (Y/N): ".format(dog.hunger))
 
-            if op == "Y":
-                dog.hunger -= 5
-                print("HUNGER reduced to -->", dog.hunger)
+        if op == "Y":
 
-            elif op == "N":
-                print("Dog is still hungry {}".format(dog.hunger))
+            if now >= limit:
+                dog.alive = False
+                break
 
             else:
-                print("Invalid input")
+                dog.mk_feed()
+                print("Hunger reduced to ---> {}".format(dog.hunger))
+                now = dog.hunger
 
-    else:
-        print("Dog is dead")
-        break
+        elif op == "N":
+
+            if now >= limit:
+                dog.alive = False
+                break
+
+            else:
+                print("Dog is still hungry {}".format(dog.hunger))
+                now = dog.hunger
+
+        else:
+            print("Invalid input")
+            now = dog.hunger
