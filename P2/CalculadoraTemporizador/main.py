@@ -9,7 +9,7 @@ def clear_console():
 
 
 def main():
-    hilo = None
+    thread = None
     print("""
         🖩 KIKIN CALCULATOR 🖩
         -------------------------------------------------
@@ -30,35 +30,37 @@ def main():
         opt = int(input("Enter your choice: "))
 
         if opt == 1:
-            hilo = th.Timer(3, addition, args=(x, y))
-            hilo.start()
+            thread = th.Timer(3, addition, args=(x, y))
+            thread.start()
             clear_console()
-            time.sleep(5)
+            time.sleep(4)
 
         elif opt == 2:
-            hilo = th.Timer(3, subtraction, args=(x, y))
-            hilo.start()
+            thread = th.Timer(3, subtraction, args=(x, y))
+            thread.start()
             clear_console()
-            time.sleep(5)
+            time.sleep(4)
 
         elif opt == 3:
-            hilo = th.Timer(3, multiplication, args=(x, y))
-            hilo.start()
+            thread = th.Timer(3, multiplication, args=(x, y))
+            thread.start()
             clear_console()
-            time.sleep(5)
+            time.sleep(4)
 
         elif opt == 4:
-            hilo = th.Timer(3, division, args=(x, y))
-            hilo.start()
+            thread = th.Timer(3, division, args=(x, y))
+            thread.start()
             clear_console()
-            time.sleep(5)
+            time.sleep(4)
 
         elif opt == 5:
             print("\nExiting...")
-            hilo.cancel()
+            time.sleep(3)
+            thread.cancel()
             break
         else:
             print("\nInvalid option. Try again.")
+            time.sleep(3)
             clear_console()
             continue
 
