@@ -1,6 +1,4 @@
 import random
-import threading as th
-
 
 def create_weapon(li, ls):
     bullets = random.randint(li, ls)
@@ -15,10 +13,6 @@ def generar_id():
         id_generado += random.choice(chars)
         n += 1
     return id_generado
-
-
-def stop_shooting():
-    th.cancel()
 
 
 class Boat:

@@ -2,6 +2,8 @@ from Classes.Boat import Boat, create_weapon
 from datetime import datetime
 import threading as th
 
+battleships = []
+
 
 def create_main_weapon_battleship():
     li = 10000
@@ -18,16 +20,19 @@ def create_secondary_weapon_battleship():
 
 
 class Battleship(Boat):
+
     def __init__(self):
         super().__init__()
         self.main_weapon = create_main_weapon_battleship()
         self.secondary_weapon = create_secondary_weapon_battleship()
 
+    def stop_shooting(self):
+        global thread_battleship
+        thread_battleship.cancel()
+
     def thread_shoot(self):
-        thread = th.Timer(1, self.thread_shoot)
-        thread.start()
-        self.main_shoot()
-        self.secondary_shoot()
+        global thread_battleship
+        thread_battleship.start()
 
     def main_shoot(self):
         c = 1

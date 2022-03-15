@@ -22,12 +22,16 @@ class Cruiser(Boat):
         super().__init__()
         self.main_weapon = create_main_weapon_cruiser()
         self.secondary_weapon = create_secondary_weapon_cruiser()
+        thread = None
+        thread = th.Timer(1, self.main_shoot)
 
     def thread_shoot(self):
-        thread = th.Timer(1, self.thread_shoot)
+        global thread
         thread.start()
-        self.main_shoot()
-        self.secondary_shoot()
+
+    def stop_shooting(self):
+        global thread
+        thread.cancel()
 
     def main_shoot(self):
         c = 1
@@ -40,6 +44,7 @@ class Cruiser(Boat):
                 if c.isdigit():
                     c = int(c)
                     if c == 0:
+                        th.cancel()
                         t2 = datetime.today()
                         secs2 = t2.timestamp()
                         f_secs = secs2 - secs

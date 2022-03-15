@@ -97,14 +97,17 @@ def open_fire():
         return
     for boat in fleet:
         boat.thread_shoot()
+        print("Boat shooted")
 
 
 def stop_fire():
     if len(fleet) == 0:
         print("No boats in the fleet")
         return
+
     for boat in fleet:
-        boat.stop_shooting()
+        stop_shooting()
+        print("Finished shooting")
 
 
 def menu():
