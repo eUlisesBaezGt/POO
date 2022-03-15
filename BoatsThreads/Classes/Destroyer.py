@@ -1,6 +1,5 @@
 from Classes.Boat import Boat, create_weapon
 from datetime import datetime
-import threading as th
 
 
 def create_main_weapon_destroyer():
@@ -22,16 +21,8 @@ class Destroyer(Boat):
         super().__init__()
         self.main_weapon = create_main_weapon_destroyer()
         self.secondary_weapon = create_secondary_weapon_destroyer()
-        thread = None
-        thread = th.Timer(1, self.main_shoot)
+        self.type = "Destroyer"
 
-    def thread_shoot(self):
-        global thread
-        thread.start()
-
-    def stop_shooting(self):
-        global thread
-        thread.cancel()
 
     def main_shoot(self):
         c = 1

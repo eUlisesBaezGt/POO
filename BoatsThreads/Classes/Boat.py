@@ -17,6 +17,7 @@ def generar_id():
 
 class Boat:
     name = ""
+    type = ""
     __crew = 0  # private
     fuel = 100
     __coordinates = ""  # private
@@ -101,7 +102,7 @@ class Boat:
             print("The engine is already off")
 
     def show(self):
-        print("Name: {}\t".format(self.name), "Crew: {}\t".format(self.crew), "Fuel: {}\t".format(self.fuel),
+        print("Name: {}\t".format(self.name),"Type: {}\t".format(self.type), "Crew: {}\t".format(self.crew), "Fuel: {}\t".format(self.fuel),
               "Coordinates: {}\t".format(self.coordinates), "Destination: {}\t".format(self.destination),
               "Speed: {}\t".format(self.speed), "Main weapon: {}\t".format(self.main_weapon),
               "Secondary weapon: {}\t".format(self.secondary_weapon), "Extras: {}\t".format(self.extras),

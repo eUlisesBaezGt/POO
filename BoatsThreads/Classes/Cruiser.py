@@ -1,6 +1,6 @@
 from Classes.Boat import Boat, create_weapon
 from datetime import datetime
-import threading as th
+
 
 
 def create_main_weapon_cruiser():
@@ -22,17 +22,9 @@ class Cruiser(Boat):
         super().__init__()
         self.main_weapon = create_main_weapon_cruiser()
         self.secondary_weapon = create_secondary_weapon_cruiser()
-        thread = None
-        thread = th.Timer(1, self.main_shoot)
+        self.type = "Cruiser"
 
-    def thread_shoot(self):
-        global thread
-        thread.start()
-
-    def stop_shooting(self):
-        global thread
-        thread.cancel()
-
+    
     def main_shoot(self):
         c = 1
         while c == 1:
@@ -44,7 +36,6 @@ class Cruiser(Boat):
                 if c.isdigit():
                     c = int(c)
                     if c == 0:
-                        th.cancel()
                         t2 = datetime.today()
                         secs2 = t2.timestamp()
                         f_secs = secs2 - secs

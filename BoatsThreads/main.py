@@ -2,6 +2,56 @@ from Classes.Battleship import *
 from Classes.Cruiser import *
 from Classes.Destroyer import *
 
+set = {
+    "thread_battleship": None,
+    "thread_cruiser": None,
+    "thread_destroyer": None
+}
+
+def end():
+    global set
+    for thread in sets:
+        set[thread].cancel()
+    print("Finished shooting")
+
+
+def threads_method():
+    global set
+    for boat in fleet:
+        if boat.type == "Battleship":
+            Battleship.main_shoot()
+        elif boat.type == "Destroyer":
+            Destroyer.main_shoot()
+        elif boat.type == "Cruiser":
+            Cruiser.main_shoot()
+        
+    set["thread_battleship"] = 
+
+
+def hilo1_acorazado_start():
+    global arr_acorazado, hilos
+    for jojo in range(len(arr_acorazado)):
+        arr_acorazado[jojo].disparar_principal()
+    hilos['hilo1_acorazado'] = th.Timer(15, hilo1_acorazado_start)
+    hilos['hilo1_acorazado'].start()
+
+def hilo2_destructor_start():
+    global arr_destructor, hilos
+    for jojo in range(len(arr_destructor)):
+        arr_destructor[jojo].disparar_principal()
+    hilos['hilo2_destructor'] = th.Timer(1, hilo2_destructor_start)
+    hilos['hilo2_destructor'].start()
+
+def hilo3_crucero_start():
+    global arr_destructor, hilos
+    for jojo in range(len(arr_crucero)):
+        arr_crucero[jojo].disparar_principal()
+    hilos['hilo3_crucero'] = th.Timer(0.5, hilo3_crucero_start)
+    hilos['hilo3_crucero'].start()
+
+
+
+
 fleet = []
 
 
