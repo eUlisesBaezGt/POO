@@ -4,8 +4,8 @@
 #         print(b, end=' ')
 #         a, b = b, a + b
 #     print()
-#
-#
+
+
 # if __name__ == '__main__':
 #     fibonacci(int(input('Enter a number: ')))
 
@@ -20,14 +20,14 @@
 #         return 1
 #     else:
 #         return fibonacci(n - 1) + fibonacci(n - 2)
-#
-#
+
+
 # if __name__ == '__main__':
 #     limit = int(input('Enter a number: '))
 #     print(fibonacci(limit))
-#
-# ------------------------------------------------------------------------------ fibonacci
 
+
+# ------------------------------------------------------------------------------ fibonacci
 
 def factorial(n):
     if n == 0:
