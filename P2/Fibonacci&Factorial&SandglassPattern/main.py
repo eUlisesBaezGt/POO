@@ -48,3 +48,5 @@ if __name__ == '__main__':
     print("-------SANDGLASS-------")
     print("Works with *, +, -, /, ★, ✺, ✤, ❄, ✈, ©, ✉, ♫, ♚, ♜, ♠, ♣, ♥")
     sandglass(5, 7, input('Enter a character: '))
+
+#%%

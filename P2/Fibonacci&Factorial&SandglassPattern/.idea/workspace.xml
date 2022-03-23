@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8841c8-ee47-4f37-a9b6-3c1cb6249f5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Fibonacci&amp;Factorial&amp;SandglassPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fibonacci&amp;Factorial/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fibonacci&amp;Factorial/.idea/Fibonacci.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fibonacci&amp;Factorial/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fibonacci&amp;Factorial/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fibonacci&amp;Factorial/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fibonacci&amp;Factorial/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Fibonacci&amp;Factorial/main.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/P2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/P2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Fibonacci&amp;Factorial&amp;SandglassPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fibonacci&amp;Factorial&amp;SandglassPattern.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +47,31 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Fibonacci&amp;Factorial&amp;SandglassPattern" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Fibonacci&amp;Factorial&amp;SandglassPattern" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,6 +107,8 @@
       <workItem from="1648006266449" duration="10000" />
       <workItem from="1648006278148" duration="123000" />
       <workItem from="1648006412553" duration="61000" />
+      <workItem from="1648050112508" duration="41000" />
+      <workItem from="1648050244104" duration="54000" />
     </task>
     <servers />
   </component>
