@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8841c8-ee47-4f37-a9b6-3c1cb6249f5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/P2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/P2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Fibonacci&amp;Factorial&amp;SandglassPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Fibonacci&amp;Factorial&amp;SandglassPattern.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlimentarHilos" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -109,6 +106,7 @@
       <workItem from="1648006412553" duration="61000" />
       <workItem from="1648050112508" duration="41000" />
       <workItem from="1648050244104" duration="54000" />
+      <workItem from="1648054925876" duration="30000" />
     </task>
     <servers />
   </component>
