@@ -39,31 +39,31 @@ def program():
     # usar type()
 
     # split dict by department
-    for key in dict:
-        for key2 in dict[key]:
-            if key2 not in pacientes:
-                pacientes[key2] = dict[key][key2]
-                # print(pacientes)
-            else:
-                pacientes[key2] += dict[key][key2]
-                # print(pacientes)
-
-
-    for key, value in dict.items():
-        for i in value:
-            if type(i) == list:
-                for j in i:
-                    if j in pacientes:
-                        pacientes[j] += 1
-                    else:
-                        pacientes[j] = 1
-            else:
-                if i in pacientes:
-                    pacientes[i] += 1
-                else:
-                    pacientes[i] = 1
-
-    print(pacientes)
+    # for key in dict:
+    #     for key2 in dict[key]:
+    #         if key2 not in pacientes:
+    #             pacientes[key2] = dict[key][key2]
+    #             # print(pacientes)
+    #         else:
+    #             pacientes[key2] += dict[key][key2]
+    #             # print(pacientes)
+    #
+    # 
+    # for key, value in dict.items():
+    #     for i in value:
+    #         if type(i) == list:
+    #             for j in i:
+    #                 if j in pacientes:
+    #                     pacientes[j] += 1
+    #                 else:
+    #                     pacientes[j] = 1
+    #         else:
+    #             if i in pacientes:
+    #                 pacientes[i] += 1
+    #             else:
+    #                 pacientes[i] = 1
+    #
+    # print(pacientes)
 
     # --------------------------------------------------
     # Al terminar las clasificaciones de los pacientes, guardar en un archivo diccionario.json, usar prettyprint

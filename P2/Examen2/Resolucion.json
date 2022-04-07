@@ -1,0 +1,366 @@
+{
+    "8897": {
+        "Otorrinolaringologia": 1,
+        "Hematologia": 1,
+        "Urologia": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 1
+    },
+    "8884": {
+        "Otorrinolaringologia": 1,
+        "Oftalmologia": 2,
+        "Hematologia": 1,
+        "Cirugia Plastica": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 1
+    },
+    "8872": {
+        "Otorrinolaringologia": 2,
+        "Oftalmologia": 2,
+        "Hematologia": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 1,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8896": {
+        "Otorrinolaringologia": 1,
+        "Oftalmologia": 4,
+        "Hematologia": 1,
+        "Laboratorio": 3,
+        "Radiologia e Imagenologia": 1,
+        "Consulta Externa": 3,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8869": {
+        "Otorrinolaringologia": 1,
+        "Cirugia Plastica": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 1,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 1
+    },
+    "8875": {
+        "Otorrinolaringologia": 1,
+        "Oftalmologia": 1,
+        "Hematologia": 1,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 2,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 1
+    },
+    "8882": {
+        "Otorrinolaringologia": 1,
+        "Oftalmologia": 1,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 1,
+        "Radiologia e Imagenologia": 1,
+        "Medicina Preventiva": 2
+    },
+    "8899": {
+        "Otorrinolaringologia": 1,
+        "Hematologia": 1,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 3,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 3,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 1
+    },
+    "8861": {
+        "Oftalmologia": 3,
+        "Hematologia": 1,
+        "Urologia": 1,
+        "Cirugia Plastica": 2,
+        "Radiologia e Imagenologia": 3,
+        "Medicina Preventiva": 4
+    },
+    "8871": {
+        "Oftalmologia": 1,
+        "Hematologia": 1,
+        "Dermatologia": 1,
+        "Geriatria": 1,
+        "Radiologia e Imagenologia": 1,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 3
+    },
+    "8888": {
+        "Oftalmologia": 1,
+        "Urologia": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 3,
+        "Consulta Externa": 1,
+        "Medicina Preventiva": 1,
+        "Banco de Sangre": 1
+    },
+    "8887": {
+        "Oftalmologia": 2,
+        "Hematologia": 1,
+        "Radiologia e Imagenologia": 4,
+        "Consulta Externa": 2,
+        "Banco de Sangre": 1
+    },
+    "8891": {
+        "Oftalmologia": 3,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 2,
+        "Neurologia y Neurocirugia": 3
+    },
+    "8863": {
+        "Oftalmologia": 2,
+        "Nefrologia": 1,
+        "Cirugia Plastica": 1,
+        "Laboratorio": 3,
+        "Radiologia e Imagenologia": 4,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 2
+    },
+    "8878": {
+        "Oftalmologia": 2,
+        "Nefrologia": 1,
+        "Dermatologia": 2,
+        "Radiologia e Imagenologia": 4,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 1,
+        "Banco de Sangre": 1,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8873": {
+        "Oftalmologia": 2,
+        "Cirugia Plastica": 2,
+        "Laboratorio": 2,
+        "Consulta Externa": 1,
+        "Medicina Preventiva": 1,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8900": {
+        "Oftalmologia": 1,
+        "Hematologia": 1,
+        "Urologia": 1,
+        "Cirugia Plastica": 2,
+        "Dermatologia": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 1
+    },
+    "8867": {
+        "Oftalmologia": 1,
+        "Urologia": 1,
+        "Cirugia Plastica": 3,
+        "Dermatologia": 1,
+        "Laboratorio": 1,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 1
+    },
+    "8886": {
+        "Oftalmologia": 1,
+        "Hematologia": 2,
+        "Urologia": 1,
+        "Cirugia Plastica": 1,
+        "Geriatria": 1,
+        "Radiologia e Imagenologia": 3,
+        "Consulta Externa": 2
+    },
+    "8895": {
+        "Oftalmologia": 3,
+        "Hematologia": 1,
+        "Urologia": 1,
+        "Cirugia Plastica": 2,
+        "Geriatria": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 1,
+        "Medicina Preventiva": 1,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8893": {
+        "Oftalmologia": 2,
+        "Urologia": 1,
+        "Dermatologia": 1,
+        "Geriatria": 1,
+        "Laboratorio": 2,
+        "Consulta Externa": 1
+    },
+    "8870": {
+        "Oftalmologia": 2,
+        "Hematologia": 2,
+        "Urologia": 1,
+        "Cirugia Plastica": 2,
+        "Dermatologia": 1,
+        "Geriatria": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 1,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 2,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8864": {
+        "Oftalmologia": 1,
+        "Hematologia": 1,
+        "Cirugia Plastica": 2,
+        "Geriatria": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 1
+    },
+    "8898": {
+        "Oftalmologia": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 1
+    },
+    "8881": {
+        "Oftalmologia": 4,
+        "Urologia": 2,
+        "Nefrologia": 1,
+        "Cirugia Plastica": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 1,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 2,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8879": {
+        "Oftalmologia": 2,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 2,
+        "Medicina Preventiva": 1,
+        "Banco de Sangre": 1,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8865": {
+        "Oftalmologia": 3,
+        "Hematologia": 1,
+        "Cirugia Plastica": 2,
+        "Dermatologia": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 1,
+        "Medicina Preventiva": 1
+    },
+    "8883": {
+        "Oftalmologia": 1,
+        "Nefrologia": 1,
+        "Cirugia Plastica": 2,
+        "Dermatologia": 1,
+        "Geriatria": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 3,
+        "Consulta Externa": 1,
+        "Medicina Preventiva": 1
+    },
+    "8866": {
+        "Oftalmologia": 1,
+        "Hematologia": 1,
+        "Urologia": 1,
+        "Cirugia Plastica": 2,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 3,
+        "Consulta Externa": 2
+    },
+    "8889": {
+        "Oftalmologia": 2,
+        "Cirugia Plastica": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 4,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 3
+    },
+    "8862": {
+        "Hematologia": 2,
+        "Cirugia Plastica": 2,
+        "Dermatologia": 1,
+        "Consulta Externa": 2,
+        "Medicina Preventiva": 4,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8894": {
+        "Hematologia": 2,
+        "Cirugia Plastica": 3,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 1,
+        "Consulta Externa": 5,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8876": {
+        "Hematologia": 1,
+        "Urologia": 3,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 2
+    },
+    "8880": {
+        "Hematologia": 2,
+        "Nefrologia": 1,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 1,
+        "Laboratorio": 1,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 1
+    },
+    "8890": {
+        "Hematologia": 1,
+        "Cirugia Plastica": 1,
+        "Laboratorio": 4,
+        "Radiologia e Imagenologia": 4
+    },
+    "8892": {
+        "Hematologia": 1,
+        "Laboratorio": 3,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 4
+    },
+    "8860": {
+        "Hematologia": 1,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 1,
+        "Laboratorio": 2,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 2
+    },
+    "8868": {
+        "Urologia": 1,
+        "Ortopedia": 1,
+        "Geriatria": 2,
+        "Radiologia e Imagenologia": 3,
+        "Consulta Externa": 1,
+        "Neurologia y Neurocirugia": 2
+    },
+    "8874": {
+        "Nefrologia": 1,
+        "Cirugia Plastica": 1,
+        "Dermatologia": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 3,
+        "Medicina Preventiva": 2
+    },
+    "8877": {
+        "Cirugia Plastica": 2,
+        "Radiologia e Imagenologia": 2,
+        "Consulta Externa": 1,
+        "Medicina Preventiva": 2,
+        "Neurologia y Neurocirugia": 1
+    },
+    "8885": {
+        "Cirugia Plastica": 2,
+        "Geriatria": 1,
+        "Laboratorio": 1,
+        "Radiologia e Imagenologia": 4,
+        "Consulta Externa": 1,
+        "Medicina Preventiva": 1
+    }
+}
