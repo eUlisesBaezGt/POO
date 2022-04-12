@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc316587-2cc5-46f2-b4dd-3a18c82a8125" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account.py" beforeDir="false" afterPath="$PROJECT_DIR$/Account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Examen P2b POO 2022.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Examen P2b POO 2022.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files.py" beforeDir="false" afterPath="$PROJECT_DIR$/Files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="dc316587-2cc5-46f2-b4dd-3a18c82a8125" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +90,7 @@
       <workItem from="1649371266333" duration="5724000" />
       <workItem from="1649362215209" duration="2332000" />
       <workItem from="1649371926275" duration="5830000" />
+      <workItem from="1649384080179" duration="61000" />
     </task>
     <servers />
   </component>
