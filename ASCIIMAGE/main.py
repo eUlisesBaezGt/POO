@@ -1,5 +1,4 @@
-# from image2AsciiBW import *
-from image2AsciiBW import *
+from image2Ascii import *
 
 if __name__ == "__main__":
     # Image to ASCII
