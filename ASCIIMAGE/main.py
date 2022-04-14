@@ -1,12 +1,25 @@
 # from image2AsciiBW import *
-from ascii import *
+from image2AsciiBW import *
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Image to ASCII
     main()
 
 #%%
-
 import ascii_magic
-my_art = ascii_magic.from_image_file('/home/eubgt/Desktop/POO/ASCIIMAGE/chewiePLUShan.jpg')
-ascii_magic.to_terminal(my_art)
+
+art = ascii_magic.from_image_file(
+    "C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Chewie.jpg",
+    columns=200,
+    width_ratio=2,
+    mode=ascii_magic.Modes.HTML,
+)
+ascii_magic.to_html_file("C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Chewie.html", art)
+
+art = ascii_magic.from_image_file(
+    "C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Boba.jpg",
+    columns=200,
+    width_ratio=2,
+    mode=ascii_magic.Modes.HTML,
+)
+ascii_magic.to_html_file("C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Boba.html", art)
