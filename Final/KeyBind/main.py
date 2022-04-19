@@ -12,17 +12,38 @@ flag = False
 def key_down(event):
     global flag
     if not flag:
-        if event.char == '\r':
-            print("Enter")
+        if event.char.isdigit():
+            click(event.char)
+        elif event.char == ".":
+            click(".")
+        elif event.char == "=":
+            equal()
+        elif event.char == "c" or event.char == "C":
+            clear()
+        elif event.char == "+":
+            click("+")
+        elif event.char == "-":
+            click("-")
+        elif event.char == "*":
+            click("*")
+        elif event.char == "/":
+            click("/")
+        elif event.char == '\r':
+            equal()
         else:
-            print(event.char)
+            print("you pressed: " + event.char)
         flag = True
 
 
-def key_up():
+def key_up(event):
     global flag
     if flag:
         flag = False
+
+
+# root.bind(<KeyPress-Return>, lambda event: button_click(event))
+root.bind('<KeyPress>', key_down)
+root.bind('<KeyRelease>', key_up)
 
 
 # create a space for results
@@ -33,6 +54,7 @@ result_label.configure(bg="orange", fg="black", font=("Arial", 20, "bold"), widt
 result_label.grid(row=0, column=0, columnspan=6)
 
 
+# cget command returns the complete value
 def click(param):
     param = str(param)
     global result
