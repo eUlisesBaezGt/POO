@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
 # #%%
 # import ascii_magic
-
+#
 # art = ascii_magic.from_image_file(
 #     "C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Chewie.jpg",
 #     columns=200,
@@ -14,7 +14,7 @@ if __name__ == "__main__":
 #     mode=ascii_magic.Modes.HTML,
 # )
 # ascii_magic.to_html_file("C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Chewie.html", art)
-
+#
 # art = ascii_magic.from_image_file(
 #     "C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Boba.jpg",
 #     columns=200,

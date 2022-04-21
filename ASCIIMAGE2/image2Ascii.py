@@ -6,7 +6,7 @@ ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
 
 
 # resize image with new width
-def resize(img, new_width):
+def resize(img, new_width=200):
     width, height = img.size
     aspect_ratio = height / width
     new_height = int(aspect_ratio * new_width)
@@ -30,7 +30,7 @@ def pixels2ascii(img):
     return characters
 
 
-def main():
+def main(new_width=200):
     path = input("Enter the path to the img: ")
     # C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Boba.jpg
     # C:/Users/eubgo/Desktop/POO/ASCIIMAGE/Chewie.jpg
@@ -52,8 +52,7 @@ def main():
         return
 
     # image through process
-    new_width = int(input("Enter the new width: "))
-    new_img_data = pixels2ascii(grayscale(resize(img, new_width)))
+    new_img_data = pixels2ascii(grayscale(resize(img)))
     n_pixels = len(new_img_data)
 
     # split string of chars into multiple strings of length equal to new width and create a list
