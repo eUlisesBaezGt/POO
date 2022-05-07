@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import filedialog as fd
 
 
 class Alumno:
@@ -67,10 +67,8 @@ class App:
     def Cbutton_add(self):
         nombre = self.GLineEdit_Name.get()
         edad = self.GLineEdit_Age.get()
-
         if len(nombre) < 3 or not edad.isdigit():
             return
-
         alumno = Alumno(nombre, edad)
         self.lista.append(alumno)
         self.GListBox_List.insert(len(self.lista) - 1, (alumno.name + ' , ' + alumno.age))
@@ -81,13 +79,10 @@ class App:
         index = self.last_selected
         nombre = self.GLineEdit_Name.get()
         edad = self.GLineEdit_Age.get()
-
         if len(nombre) < 3 or not edad.isdigit():
             return
-
         self.lista[index].name = nombre
         self.lista[index].age = edad
-
         self.GListBox_List.delete(index)
         self.GListBox_List.insert(index, (nombre + ' , ' + edad))
 
@@ -98,10 +93,8 @@ class App:
 
     def itemSelect(self, event):
         index = self.GListBox_List.curselection()
-
         if len(index) == 0:
             return
-
         index = index[0]
         self.last_selected = index
         alumno = self.lista[index]
@@ -109,29 +102,27 @@ class App:
         self.txt_age.set(alumno.age)
 
     def Cbutton_export(self):
+        with open('alumnos.csv', 'w') as f:
+            for alumno in self.lista:
+                f.write(alumno.name + ',' + alumno.age + '\n')
         with open('alumnos.txt', 'w') as f:
             for alumno in self.lista:
                 f.write(alumno.name + ',' + alumno.age + '\n')
 
     def Cbutton_import(self):
-        file_path = filedialog.askopenfilename()
-        with open(file_path, 'r') as f:
-            lines = f.readlines()
-            for line in lines:
-                line = line.strip()
-                name, age = line.split(',')
-                alumno = Alumno(name, age)
-                #create a new list with the imported data
-                self.lista.append(alumno)
-            # replace the original list with the new list
-            self.lista = self.lista
-            # replace the Listbox datos with the new list
-            self.GListBox_List.delete(0, tk.END)
-            for alumno in self.lista:
-                self.GListBox_List.insert(tk.END, (alumno.name + ' , ' + alumno.age))
+        temp = []
+        filetypes = (('Text files', '*.txt'), ('CSV files', '*.csv'), ('All files', '*.*'))
+        path = fd.askopenfilename(title='Choose file', filetypes=filetypes)
 
-
-
-
-
-
+        if path != '':
+            with open(path, 'r') as f:
+                lines = f.readlines()
+                for line in lines:
+                    line = line.strip()
+                    name, age = line.split(',')
+                    alumno = Alumno(name, age)
+                    temp.append(alumno)
+                self.lista = temp
+                self.GListBox_List.delete(0, tk.END)
+                for alumno in self.lista:
+                    self.GListBox_List.insert(tk.END, (alumno.name + ' , ' + alumno.age))
